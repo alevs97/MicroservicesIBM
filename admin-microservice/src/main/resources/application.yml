@@ -1,0 +1,15 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: admin-microservice
+  config:
+    import: optional:configserver:http://localhost:8888
+  datasource:
+    url: jdbc:h2:mem:testdb
+  h2:
+    console:
+      enabled: true
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
