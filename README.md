@@ -167,3 +167,51 @@ Una respuesta que no este en este rango seria respondida como:
 }
 
 ```
+
+
+### Endpoints de _User Microservice_
+El endpoint de este microservicio es:
+
+* http://localhost:8100/passion/{passion}/salary/{salary}/age/{age}
+
+El siguiente endpoint trae una lista de tarjetas que haga match con _passion_, _salary_ y _age_. Este endpoint debe de cumplir las condicion del mismo servicio de _Admin Microservice_. Una respuesta de este endpoint
+seria de esta forma:
+
+
+```
+[
+    {
+        "id": 0,
+        "name": "Clasica"
+    },
+    {
+        "id": 1,
+        "name": " Office Depot"
+    },
+    {
+        "id": 2,
+        "name": " Cotsco"
+    },
+    {
+        "id": 3,
+        "name": " Best Buy Banamex"
+    },
+    {
+        "id": 4,
+        "name": " The Home Depot"
+    }
+]
+
+```
+
+
+Una respuesta que no cumpla con estas condiciones dispararia la siguiente respuesta:
+```
+{
+    "timestamp": "2021-10-18T17:44:41.472+00:00",
+    "status": 500,
+    "error": "Internal Server Error",
+    "path": "/passion/shopping/salary/12000/age/562"
+}
+
+```
