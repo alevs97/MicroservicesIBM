@@ -23,7 +23,7 @@ public class UserMicroserviceController {
 	private ErrorResponse badrequest;
 	
 	@GetMapping("/passion/{passion}/salary/{salary}/age/{age}")
-	public ResponseEntity<?> getListAge(
+	public ResponseEntity<?> getPassionSalaryAgeAdmin(
 			@PathVariable String passion,
 			@PathVariable Double salary,
 			@PathVariable Integer age){
