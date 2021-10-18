@@ -215,3 +215,41 @@ Una respuesta que no cumpla con estas condiciones dispararia la siguiente respue
 }
 
 ```
+
+## Evidencias Postman 
+
+### Peticiones a _AdminMicroservice_
+
+* Peticion a http://localhost:8000/age/{age}:
+
+![Peticion](https://github.com/alevs97/MicroservicesIBM/blob/main/img/getListAge-AdminMicro.PNG)
+
+* Peticion a http://localhost:8001/salary/{salary}:
+
+![Peticion](https://github.com/alevs97/MicroservicesIBM/blob/main/img/getListSalaries-AdminMicro.PNG)
+
+* http://localhost:8000/passion/{passion}:
+
+![Peticion](https://github.com/alevs97/MicroservicesIBM/blob/main/img/getListPassions-AdminMicro.PNG)
+
+* Peticion a http://localhost:8001/passion/{passion}/salary/{salary}/age/{age}:
+
+![Peticion](https://github.com/alevs97/MicroservicesIBM/blob/main/img/getPassionSalaryAgeAdmin-AdminMicro.PNG)
+
+
+### Peticion a _UserMicroservice_
+
+* Peticion a https://github.com/alevs97/MicroservicesIBM/blob/main/img/getPassionSalaryAgeAdmin-UserMicro.PNG:
+
+![Peticion](https://github.com/alevs97/MicroservicesIBM/blob/main/img/getListAge-AdminMicro.PNG)
+
+
+### Como correr el proyecto 
+ Para correr el proyecto es necesario de correr simultaneamente todas las _Spring Boot Application_. Siendo estas:
+ * admin-microservice
+ * admin-microservice-2 
+ * naming-server
+ * user-microservice
+
+Elaborado por:
+Alejandro Viveros 
